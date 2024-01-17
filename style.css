@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* animation for background */
+#container{
+    animation:gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+   0%  {background-color:#b5e2fa;}
+   25% {background-color:#ffd275;}
+   50% {background-color:#98c9a3;}
+   100%{ background-color:#f08080;}   
+}
+
+
+
+ .d1 {
+    top: 200px;
+    left: 260px;
+    display:flex;
+    position: relative; 
+    font-size: 80px;   
+}
+
+.d1 span {
+    padding: 5px 5px;
+    animation: jump 5s infinite;   
+ } 
+
+ @keyframes jump {
+    0% { transform: translateY(-50px); }
+    50% { transform: translateY(50px); }
+    100%{ transform: translateY(-50px); }
+}
+
+ span:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+ span:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+ span:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+ span:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+ span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+ span:nth-child(6) {
+    animation-delay: 2.4s;
+}
+
+ span:nth-child(7) {
+    animation-delay: 2.8s;
+}  
+
+/* css and transition for button1  */
+.btn1{
+    border: 3px solid rgb(19, 168, 78); 
+    border-radius: 30px;
+    font-size:30px;
+    
+    width:220px;
+    margin:400px 120px;
+    padding:20px 50px ;
+    
+    
+    transition: width 2s ease;
+}
+
+.btn1:active{
+    width:350px;
+    color: whitesmoke;
+    background-color:rgb(19, 168, 78); 
+    box-shadow: inset;  
+}
+
+.btn1::after {
+    content: "HTML";
+}
+.btn1:active:after {
+    content: "Completed!";
+}
+
+
+       
+/*transform for button 2  */
+.btn2{
+    border: 3px solid #008CBA; 
+    border-radius: 30px;
+    font-size:30px;
+    padding:20px 50px ; 
+}
+
+.btn2:active{
+    transform: rotate(-300deg);
+    transform-origin: 10% 20%;
+
+    background-color:#008CBA; ;
+}
+
+
+
+
+
+
